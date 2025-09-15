@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+plotly.graph_objects
+make_interp_spline
+os
+datetime
+plotly.express

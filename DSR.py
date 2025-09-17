@@ -25,9 +25,9 @@ df1 = pd.read_excel("DSR_Sample.xlsx", sheet_name=0, engine='openpyxl')
 
 if df1.shape[1] >= 3:
     color_map = {
-        1: "#5B913B",  # Green
-        2: "#D7B26D",  # Amber
-        3: "#CA7373"   # Red
+        1: "#BDE3C3",  # Green
+        2: "#FFE797",  # Amber
+        3: "#FFC7A7"   # Red
     }
 
     cols = st.columns(len(df1))
@@ -310,4 +310,5 @@ if os.path.exists(file_path):
                 st.plotly_chart(chart2, use_container_width=True)
 else:
     st.error("Excel file not found.")
+
 

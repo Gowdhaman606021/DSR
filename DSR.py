@@ -153,11 +153,11 @@ if os.path.exists(file_path):
                 def highlight_status(val):
                     val_str = str(val).strip().lower()
                     if val_str == 'signed off':
-                        return 'background-color: #556B2F'
+                        return 'background-color: #BDE3C3'
                     elif val_str == 'in progress':
-                        return 'background-color: #D7B26D'
+                        return 'background-color: #FFE797'
                     elif val_str == 'blocked':
-                        return 'background-color: #CA7373'
+                        return 'background-color: #FFC7A7'
                     else:
                         return ''
 
@@ -310,3 +310,4 @@ if os.path.exists(file_path):
                 st.plotly_chart(chart2, use_container_width=True)
 else:
     st.error("Excel file not found.")
+
